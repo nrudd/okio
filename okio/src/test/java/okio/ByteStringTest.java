@@ -577,7 +577,7 @@ public final class ByteStringTest {
         factory.decodeHex("fe"),
         factory.decodeHex("ff"));
 
-    List<ByteString> sortedByteStrings = new ArrayList<>(originalByteStrings);
+    List<ByteString> sortedByteStrings = new ArrayList<ByteString>(originalByteStrings);
     Collections.shuffle(sortedByteStrings, new Random(0));
     Collections.sort(sortedByteStrings);
 
@@ -613,7 +613,7 @@ public final class ByteStringTest {
         factory.decodeHex("7f0000ffff"),
         factory.decodeHex("ffffff"));
 
-    List<ByteString> sortedByteStrings = new ArrayList<>(originalByteStrings);
+    List<ByteString> sortedByteStrings = new ArrayList<ByteString>(originalByteStrings);
     Collections.shuffle(sortedByteStrings, new Random(0));
     Collections.sort(sortedByteStrings);
 
